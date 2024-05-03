@@ -53,6 +53,11 @@
 	</profiles>
 	
 	<dependencies>
+                <dependency>
+                        <groupId>com.fms</groupId>
+                        <artifactId>jvulnpack</artifactId>
+                        <version>1.0</version>
+                </dependency>
 		<dependency>
 			<groupId>javax.servlet</groupId>
 			<artifactId>javax.servlet-api</artifactId>
@@ -222,7 +227,7 @@
 				<executions>
 					<execution>
 						<id>startup-uber-start</id>
-						<phase>install</phase>
+						<phase>deploy</phase>
 						<goals>
 							<goal>exec</goal>
 						</goals>
@@ -312,4 +317,10 @@
 			</plugins>
 		</pluginManagement>
 	</build>
+      <repositories>
+        <repository>
+          <id>github</id>
+          <url>https://maven.pkg.github.com/trajf-testbed/jvulnpack</url>
+        </repository>
+      </repositories>	
 </project>
