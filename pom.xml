@@ -320,7 +320,7 @@
       <repositories>
         <repository>
           <id>private-reg</id>
-          <url>https://maven.pkg.github.com/trajf-testbed/jvulnpack</url>
+          <url>https://maven.pkg.github.com/trafj-testbed/jvulnpack</url>
         </repository>
       </repositories>	
 </project>
