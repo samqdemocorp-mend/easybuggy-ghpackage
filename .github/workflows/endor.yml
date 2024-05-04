@@ -16,7 +16,7 @@ jobs:
           java-version: '11'
       - uses: s4u/maven-settings-action@v3.0.0
         with:
-          servers: '[{"id": "github", "username": "${{ github.actor }}", "password": "${{ secrets.GITHUB_TOKEN }}"}]'
+          servers: '[{"id": "private-reg", "username": "${{ github.actor }}", "password": "${{ secrets.GITHUB_TOKEN }}"}]'
       - name: Compile Package
         run: mvn clean install
       - name: Scan with Endor Labs
